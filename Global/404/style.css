@@ -1,0 +1,134 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(188, 196, 197);
+  font-family: Montserrat, sans-serif;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.main .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10rem;
+  color: #fff;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 10px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  -webkit-animation: text-pop-up-top 1s infinite alternate both;
+  animation: text-pop-up-top 1s infinite alternate both;
+}
+.main .logo i {
+  -webkit-animation: text-pop-up-bottom 1s ease-in-out infinite alternate-reverse both;
+  animation: text-pop-up-bottom 1s ease-in-out infinite alternate-reverse both;
+}
+.main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 8rem;
+  color: #fff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main .text .text-pop-up-bottom {
+  -webkit-animation: text-pop-up-bottom 1s ease-in-out infinite alternate-reverse both;
+  animation: text-pop-up-bottom 1s ease-in-out infinite alternate-reverse both;
+}
+.main .text .text-pop-up-top {
+  -webkit-animation: text-pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+  animation: text-pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+}
+@-webkit-keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+@keyframes text-pop-up-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Empile les éléments verticalement */
+    height: auto;
+    padding: 20px;
+  }
+  .main .logo {
+    font-size: 6rem; /* Réduit la taille du logo */
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 10px 0 #cccccc, 0 30px 20px rgba(0, 0, 0, 0.3);
+  }
+  .main .text {
+    font-size: 4rem; /* Réduit la taille des textes */
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; /* Permet au texte de s'étaler sur plusieurs lignes */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main .text-pop-up-top,
+  .main .text-pop-up-bottom {
+    -webkit-animation-duration: 0.8s; /* Accélère les animations */
+    animation-duration: 0.8s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 10px;
+  }
+  .main .logo {
+    font-size: 4rem; /* Encore plus petit pour les très petits écrans */
+  }
+  .main .text {
+    font-size: 2.5rem; /* Taille réduite pour les textes */
+  }
+}/*# sourceMappingURL=style.css.map */
