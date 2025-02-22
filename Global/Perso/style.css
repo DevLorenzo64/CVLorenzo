@@ -4,7 +4,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
-  background-color: #0a131e;
 }
 
 html {
@@ -13,14 +12,13 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: rgb(207, 180, 158);
+  background-color: #0a131e;
   color: rgb(207, 180, 158);
 }
 
 header nav {
   padding: 1rem 2rem;
   background-color: #0a131e;
-  color: whitesmoke;
 }
 header nav ul {
   display: -webkit-box;
@@ -32,12 +30,20 @@ header nav ul {
       flex-wrap: wrap;
 }
 header nav ul li {
-  color: whitesmoke;
+  color: rgba(83, 39, 39, 0.679);
   text-decoration: none;
   border-radius: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bolder;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 header nav ul li a {
   height: 100%;
@@ -81,134 +87,86 @@ header nav ul li a:hover::before {
 header h1 {
   text-align: center;
   padding: 3% 2.5%;
-  font-size: 5vw;
+  font-size: 3rem;
 }
 header p {
   text-align: center;
   font-size: 4vw;
 }
 
-main {
-  width: 100%;
-  min-height: 500px;
-  gap: 1rem;
-}
-main .musique {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  gap: 12px;
-  padding: 0 10px;
-}
-main .musique .card-2,
-main .musique .card-3 {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  display: none;
-  opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  border-radius: 100%;
-}
-main .musique .card-1 {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  height: 250px;
-  width: 250px;
-  display: block;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
-  border-radius: 100%;
-}
-main .musique #card1:target,
-main .musique #card2:target,
-main .musique #card3:target {
-  opacity: 1;
-  display: block;
-}
-main .musique .card-1 {
-  position: relative;
-  background-image: url(./assets/458205248_1057407992641307_7211894212455924556_n.jpg);
-  background-size: cover;
-}
-main .musique .card-1 audio {
-  position: absolute;
-  left: 100%;
-  top: 40%;
-  width: 100px;
-  border-radius: 1000px;
-}
-main .card-2 {
-  position: relative;
-  background-image: url(./assets/469324026_1117215509801314_3857818510479716538_n.jpg);
-  background-size: cover;
-}
-main .card-2 audio {
-  position: absolute;
-  left: 100%;
-  top: 40%;
-  width: 100px;
-  border-radius: 1000px;
-}
-main .card-3 {
-  position: relative;
-  background-image: url(./assets/468279351_1695667751004863_2367781540484185888_n.jpg);
-  background-size: cover;
-}
-main .card-3 audio {
-  position: absolute;
-  left: 100%;
-  top: 40%;
-  width: 100px;
-  border-radius: 1000px;
-}
-
-.buttons {
+.musique {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
-  margin: 0 auto;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.buttons a {
-  padding: 10px 20px;
+  width: 100%;
+  min-height: 500px;
+  gap: 1rem;
+  position: relative;
+  padding: 0 10px;
   background-color: #0a131e;
+}
+.musique img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+.musique p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
   color: whitesmoke;
-  text-decoration: none;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+  background-color: rgb(144, 84, 6);
+  border-radius: 100px;
+  width: 175px;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.buttons a:nth-child(1) {
-  background-color: gold;
-}
-.buttons a:nth-child(2) {
+.musique .pkendrick {
   background-color: silver;
-  color: rgb(18, 18, 18);
 }
-.buttons a:nth-child(3) {
-  background-color: rgb(205, 127, 50);
+.musique .psch {
+  background-color: goldenrod;
 }
-.buttons a:hover {
-  background-color: whitesmoke;
-  color: rgb(18, 18, 18);
+.musique .bb-jacques,
+.musique .kendrick,
+.musique .sch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
 }
 
 .cinema {
