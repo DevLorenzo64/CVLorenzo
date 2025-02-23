@@ -1,9 +1,6 @@
 // Variables pour les couleurs
-$primary-color: #0a131e;
-$secondary-color: rgb(207, 180, 158);
-$highlight-color: rgb(207, 180, 158);
-$white-color: whitesmoke;
-$black-color: rgb(18, 18, 18);
+$primary-color: #1B0335;
+
 
 // Reset de base
 * {
@@ -20,7 +17,6 @@ html {
 body {
   font-family: sans-serif;
   background-color: $primary-color;
-  color: $secondary-color;
 }
 
 header {
@@ -34,7 +30,7 @@ header {
       flex-wrap: wrap;
 
       li {
-        color: rgba(83, 39, 39, 0.679);
+        color: #35031B;
         text-decoration: none;
         border-radius: 5px;
         transition: all 0.3s ease;
@@ -48,7 +44,7 @@ header {
           height: 100%;
           width: 100%;
           text-decoration: none;
-          color: rgb(255, 253, 253);
+         
           font-weight: bolder;
           border-radius: 100px;
           display: block;
@@ -58,7 +54,7 @@ header {
             to right,
             rgba(83, 39, 39, 0.679),
             rgb(210, 148, 148) 50%,
-            rgb(147 147 147) 50%
+            #35031B 50%
           );
           background-size: 200% 100%;
           background-position: -100%;
@@ -94,6 +90,7 @@ header {
     text-align: center;
     padding: 3% 2.5%;
     font-size: 3rem;
+    color: #F4F1FA;
   }
 
   p {
@@ -115,6 +112,16 @@ header {
   position: relative;
   padding: 0 10px;
   background-color: $primary-color;
+  background-image: 
+  url("./assets/set-colorful-brushdrawn-bold-geometric-260nw-2470254277.jpg"),
+  url("./assets/set-colorful-brushdrawn-bold-geometric-260nw-2470254277.jpg");
+background-repeat: no-repeat, no-repeat;
+background-position: 10% center, 90% center;
+background-size: contain, contain;
+
+h2 {
+  color: #F4F1FA;
+}
 
   img {
     align-items: center;
@@ -127,7 +134,7 @@ header {
     margin-top: 15px;
     text-align: center;
     font-size: 1.2rem;
-    color: $white-color;
+    color: #F4F1FA;
     background-color: rgb(144, 84, 6);
     border-radius: 100px;
     width: 175px;
@@ -143,9 +150,7 @@ header {
 
   .psch {
     background-color: goldenrod;
-    
   }
-  
 
   .bb-jacques,
   .kendrick,
@@ -155,7 +160,6 @@ header {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    
   }
 }
 
@@ -170,14 +174,13 @@ header {
     text-align: center;
     padding: 3% 0 2.5% 0;
     font-size: 3rem;
-    color: $white-color;
+    color: #F4F1FA;
   }
 
   .row-1,
   .row-2,
   .row-3 {
-    padding: 0 5% 0 1%;
-    margin-bottom: 2%;
+    margin: 3% 0 3% 2%;
     height: 150px;
     width: 100%;
     display: grid;
@@ -187,8 +190,8 @@ header {
     img {
       grid-column: 1;
       border-radius: 20px;
-      width: 125px;
-      height: 125px;
+      width: 250px;
+      height: 250px;
     }
 
     blockquote {
@@ -223,7 +226,7 @@ header {
         font-size: 2rem;
         transition: all 0.3s ease;
         &:hover {
-          color: $black-color;
+          color: blue;
         }
       }
       span {
@@ -233,6 +236,38 @@ header {
 
         i {
           color: gold;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 728px) {
+    .row-1, .row-2, .row-3 {
+      width: 100%;
+      display: block;
+      margin: 0 auto; 
+      height: auto;  
+
+      img {
+        display: block;
+        width: 200px;  
+        height: 200px;  
+        margin: 0 auto 10px auto; 
+      }
+
+      blockquote {
+        font-size: 1.5rem;  
+        width: 100%;
+        margin-top: 10px;  
+      }
+
+      button {
+        width: 40px; 
+        height: 40px;
+        margin-top: 10px;  
+
+        span {
+          display: none;
         }
       }
     }
@@ -249,14 +284,16 @@ header {
     text-align: center;
     padding: 3% 0 2.5% 0;
     font-size: 3rem;
-    color: $white-color;
+    color: #F4F1FA;
   }
 
   .projets {
+    margin: 0 5% 0 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+   
 
     .projet-1,
     .projet-2,
@@ -269,7 +306,7 @@ header {
 
       h3 {
         font-size: 2rem;
-        color: $primary-color;
+        color: #F4F1FA;
         margin-bottom: 4%;
       }
 
@@ -284,7 +321,7 @@ header {
 
 footer {
   background-color: $primary-color;
-  color: $white-color;
+  color: #F4F1FA;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
