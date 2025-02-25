@@ -12,12 +12,12 @@ html {
 
 body {
   font-family: sans-serif;
-  background-color: #1b0335;
+  background-color: #e6e3ea;
 }
 
 header nav {
   padding: 1rem 2rem;
-  background-color: #1b0335;
+  background-color: #e6e3ea;
 }
 header nav ul {
   display: -webkit-box;
@@ -152,8 +152,8 @@ p {
   gap: 1rem;
   position: relative;
   padding: 0 10px;
-  background-color: #1b0335;
-  background-image: url("./assets/set-colorful-brushdrawn-bold-geometric-260nw-2470254277.jpg"), url("./assets/set-colorful-brushdrawn-bold-geometric-260nw-2470254277.jpg");
+  background-color: #e6e3ea;
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png"), url("./assets/set-colorful-brushdrawn-bold-geometric-260nw-2470254277.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 10% center, 90% center;
   background-size: contain, contain;
@@ -216,7 +216,7 @@ p {
 }
 
 .cinema {
-  background-color: #1b0335;
+  background-color: #e6e3ea;
   width: 100%;
   min-height: 650px;
   padding: 0 0 1.5% 0;
@@ -254,7 +254,7 @@ p {
   grid-column: 2;
   font-size: 2vw;
   color: whitesmoke;
-  background-color: #1b0335;
+  background-color: #e6e3ea;
   border-radius: 100px;
   display: grid;
   place-items: center;
@@ -278,7 +278,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1b0335;
+  background-color: #e6e3ea;
 }
 .cinema .row-1 button a,
 .cinema .row-2 button a,
@@ -349,7 +349,7 @@ p {
 }
 
 .projet {
-  background-color: #1b0335;
+  background-color: #e6e3ea;
   width: 100%;
   min-height: 650px;
   padding: 0 0 2.5% 0;
@@ -406,7 +406,7 @@ p {
 }
 
 footer {
-  background-color: #1b0335;
+  background-color: #e6e3ea;
   color: #f4f1fa;
   padding: 1rem 2rem;
   display: -webkit-box;
