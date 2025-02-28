@@ -27,9 +27,6 @@ body {
 main {
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 2rem;
 
   .presentation {
@@ -47,7 +44,6 @@ main {
 
     .text-content {
       width: 30%;
-     justify-content: center;
      align-items: center;
      display: flex;
      flex-direction: column;
@@ -62,7 +58,7 @@ main {
       p {
         font-size: 1rem; 
         color: $p-text;
-        line-height: 1.6;
+        line-height: 2.5;
         width: 100%; 
         max-width: 80%; 
         margin: 0 auto; 
@@ -107,21 +103,20 @@ header {
     ul {
       display: flex;
       justify-content: space-around;
-      flex-wrap: wrap;
+      flex-direction: column;
 
       li {
         text-decoration: none;
         border-radius: 5px;
         transition: all 0.3s ease;
         font-weight: bolder;
-        align-items: center;
         display: flex;
-        font-size: 1.2rem;
         cursor: pointer;
+        margin-bottom: 1rem;
       }
 
       #liID {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         color: #A1A4D6;
         font-weight: bolder;
         
@@ -149,7 +144,7 @@ header {
         transition: all 0.3s ease-in-out;
         position: relative;
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
         &::before {
           content: "";

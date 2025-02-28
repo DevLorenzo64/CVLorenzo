@@ -20,15 +20,6 @@ body {
 main {
   width: 100%;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 2rem;
 }
 main .presentation {
@@ -52,9 +43,6 @@ main .presentation {
 }
 main .presentation .text-content {
   width: 30%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,7 +63,7 @@ main .presentation .text-content h1 {
 main .presentation .text-content p {
   font-size: 1rem;
   color: #353232;
-  line-height: 1.6;
+  line-height: 2.5;
   width: 100%;
   max-width: 80%;
   margin: 0 auto;
@@ -138,8 +126,10 @@ header nav ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 header nav ul li {
   text-decoration: none;
@@ -147,17 +137,14 @@ header nav ul li {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bolder;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 header nav ul #liID {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #A1A4D6;
   font-weight: bolder;
 }
@@ -179,7 +166,7 @@ header nav ul a {
   transition: all 0.3s ease-in-out;
   position: relative;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 header nav ul a::before {
   content: "";
