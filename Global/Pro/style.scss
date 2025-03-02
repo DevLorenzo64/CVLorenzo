@@ -30,7 +30,7 @@ header {
       gap: 1rem;
 
       li {
-        color: white;
+        color: $p-text;
         text-decoration: none;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -74,20 +74,30 @@ header {
       }
       p {
         text-align: center;
-        padding: 4.5%;
+        padding: 3.5%;
         font-size: 1.2rem;
+
+        @media (max-width: 728px) {
+          font-size: 0.8rem;
+        }
       }
+
+
 
 
     }
     
     .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
       img {
-        border-radius: 150px;
-        max-width: 450px;
-        height: 450px;
+        border-radius: 50px;
+        max-width: 40%;
+        height: 100%;
       }
+
     }
   }
 

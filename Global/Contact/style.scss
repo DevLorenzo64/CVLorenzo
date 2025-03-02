@@ -1,7 +1,7 @@
-$primary-color: rgb(73, 24, 97);
-$secondary-color: rgb(208, 52, 213);
-$highlight-color: rgb(233, 179, 245);
-$white-color: whitesmoke;
+$primary-color: #e6e3ea;
+$secondary-color: #59585bb3;
+$highlight-color: #e6e3ea;
+$white-color: #353232;
 $black-color: rgb(18, 18, 18);
 
 * {
@@ -21,8 +21,7 @@ header {
   margin-bottom: 2rem;
   nav {
     padding: 1rem 2rem;
-    background-color: $primary-color;
-    color: $white-color;
+    background-color: $white-color;
 
     ul {
       display: flex;
@@ -30,7 +29,7 @@ header {
       align-items: center;
 
       li {
-        color: $white-color;
+        color: $primary-color;
         text-decoration: none;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -45,13 +44,64 @@ header {
 
         a {
           text-decoration: none;
-          color: $white-color;
+          color: $primary-color;
 
           &:hover {
             color: $black-color;
           }
         }
       }
+    }
+  }
+}
+
+
+.comparatif {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2.5% 2% 2% 1%;
+  
+  h1 {
+    margin: 5% 5% 5% 5%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tftable {
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+    width: 80%;
+    border-width: 1px;
+    border-color: #bcaf91;
+    border-collapse: collapse;
+    
+
+    th {
+      font-size: 2.7rem;
+      background-color: $secondary-color;
+      border-width: 1px;
+      padding: 8px;
+      border-style: solid;
+      border-color: #bcaf91;
+      text-align: center;
+    }
+
+    tr {
+      background-color: #ffffff;
+    }
+
+    td {
+      font-size: 1.7rem;
+      border-width: 1px;
+      padding: 8px;
+      border-style: solid;
+      border-color: #bcaf91;
     }
   }
 }
@@ -119,6 +169,7 @@ header {
 
       &:hover {
         background-color: $secondary-color;
+        color: $highlight-color;
       }
     }
   }
@@ -132,8 +183,8 @@ footer {
   justify-content: space-around;
   align-items: center;
   p {
-      text-align: center;
-      font-size: large;
-      color: rgb(188, 173, 173);
+    text-align: center;
+    font-size: large;
+    color: rgb(188, 173, 173);
   }
 }

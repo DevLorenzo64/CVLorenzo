@@ -8,8 +8,8 @@
 
 body {
   font-family: sans-serif;
-  background-color: rgb(233, 179, 245);
-  color: rgb(208, 52, 213);
+  background-color: #e6e3ea;
+  color: rgba(89, 88, 91, 0.7019607843);
 }
 
 header {
@@ -17,8 +17,7 @@ header {
 }
 header nav {
   padding: 1rem 2rem;
-  background-color: rgb(73, 24, 97);
-  color: whitesmoke;
+  background-color: #353232;
 }
 header nav ul {
   display: -webkit-box;
@@ -31,7 +30,7 @@ header nav ul {
           align-items: center;
 }
 header nav ul li {
-  color: whitesmoke;
+  color: #e6e3ea;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -40,21 +39,80 @@ header nav ul li {
   cursor: pointer;
 }
 header nav ul li:hover {
-  background-color: whitesmoke;
+  background-color: #353232;
   border-radius: 50px;
   color: rgb(18, 18, 18);
 }
 header nav ul li a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #e6e3ea;
 }
 header nav ul li a:hover {
   color: rgb(18, 18, 18);
 }
 
+.comparatif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2.5% 2% 2% 1%;
+}
+.comparatif h1 {
+  margin: 5% 5% 5% 5%;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.comparatif .tftable {
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+  width: 80%;
+  border-width: 1px;
+  border-color: #bcaf91;
+  border-collapse: collapse;
+}
+.comparatif .tftable th {
+  font-size: 2.7rem;
+  background-color: rgba(89, 88, 91, 0.7019607843);
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #bcaf91;
+  text-align: center;
+}
+.comparatif .tftable tr {
+  background-color: #ffffff;
+}
+.comparatif .tftable td {
+  font-size: 1.7rem;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #bcaf91;
+}
+
 #contact {
   padding: 40px;
-  background-color: whitesmoke;
+  background-color: #353232;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
@@ -65,12 +123,12 @@ header nav ul li a:hover {
 #contact h2 {
   text-align: center;
   font-size: 2rem;
-  color: rgb(73, 24, 97);
+  color: #e6e3ea;
   margin-bottom: 10px;
 }
 #contact p {
   text-align: center;
-  color: rgb(208, 52, 213);
+  color: rgba(89, 88, 91, 0.7019607843);
   margin-bottom: 20px;
 }
 #contact .contact-form {
@@ -85,33 +143,33 @@ header nav ul li a:hover {
 }
 #contact .contact-form label {
   font-size: 1rem;
-  color: rgb(73, 24, 97);
+  color: #e6e3ea;
 }
 #contact .contact-form input,
 #contact .contact-form textarea {
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid rgb(208, 52, 213);
+  border: 1px solid rgba(89, 88, 91, 0.7019607843);
   border-radius: 4px;
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: rgb(233, 179, 245);
+  background-color: #e6e3ea;
   color: rgb(18, 18, 18);
   resize: none;
 }
 #contact .contact-form input:focus,
 #contact .contact-form textarea:focus {
   outline: none;
-  border-color: rgb(208, 52, 213);
+  border-color: rgba(89, 88, 91, 0.7019607843);
   -webkit-box-shadow: 0 0 5px rgba(208, 52, 213, 0.5);
           box-shadow: 0 0 5px rgba(208, 52, 213, 0.5);
 }
 #contact .contact-form button {
   padding: 10px 15px;
   font-size: 1rem;
-  color: whitesmoke;
-  background-color: rgb(73, 24, 97);
+  color: #353232;
+  background-color: #e6e3ea;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -119,11 +177,12 @@ header nav ul li a:hover {
   transition: background-color 0.3s ease;
 }
 #contact .contact-form button:hover {
-  background-color: rgb(208, 52, 213);
+  background-color: rgba(89, 88, 91, 0.7019607843);
+  color: #e6e3ea;
 }
 
 footer {
-  background-color: rgb(73, 24, 97);
+  background-color: #e6e3ea;
   color: white;
   padding: 1rem 2rem;
   display: -webkit-box;

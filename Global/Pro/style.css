@@ -28,7 +28,7 @@ header nav ul {
   gap: 1rem;
 }
 header nav ul li {
-  color: white;
+  color: #353232;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 5px;
@@ -72,13 +72,29 @@ header .lorenzo .text h1 {
 }
 header .lorenzo .text p {
   text-align: center;
-  padding: 4.5%;
+  padding: 3.5%;
   font-size: 1.2rem;
 }
+@media (max-width: 728px) {
+  header .lorenzo .text p {
+    font-size: 0.8rem;
+  }
+}
+header .lorenzo .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 header .lorenzo .img img {
-  border-radius: 150px;
-  max-width: 450px;
-  height: 450px;
+  border-radius: 50px;
+  max-width: 40%;
+  height: 100%;
 }
 
 main {
