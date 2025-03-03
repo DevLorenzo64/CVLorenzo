@@ -2,7 +2,6 @@ $primary-color: #e6e3ea;
 $title-text: #59585bb3;
 $p-text: #353232;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -56,16 +55,13 @@ header {
     }
   }
 
-  
   .lorenzo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-    
+
     .text {
-      
       h1 {
         text-align: center;
         color: $title-text;
@@ -81,26 +77,20 @@ header {
           font-size: 0.8rem;
         }
       }
-
-
-
-
     }
-    
+
     .img {
       display: flex;
       align-items: center;
       justify-content: center;
-      
+
       img {
         border-radius: 50px;
         max-width: 40%;
         height: 100%;
       }
-
     }
   }
-
 }
 
 main {
@@ -155,12 +145,20 @@ footer {
   align-items: center;
   text-decoration: none;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   a {
     text-decoration: none;
     color: $primary-color;
     font-weight: bolder;
     font-size: 1.3rem;
     transition: 0.2s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: black;
@@ -177,6 +175,12 @@ footer {
     justify-content: space-evenly;
     width: 30%;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2%;
+    }
   }
 
   .droit {
@@ -184,5 +188,19 @@ footer {
     width: 70%;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .confidentialite {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }

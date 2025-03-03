@@ -19,9 +19,6 @@ body {
   position: relative;
   font-family: sans-serif;
   background-color: $primary-color;
-  
-
- 
 }
 // PARTIE 0 HEADER
 
@@ -118,9 +115,6 @@ h1 {
   z-index: 2;
 }
 
-
-
-
 //  PARTIE 0.5 presentation
 
 .presentation {
@@ -131,28 +125,20 @@ h1 {
   width: 100%;
   padding: 2rem;
 
-  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: left;
-
-
+  
 
   @media (max-width: 728px) {
     flex-direction: column;
   }
-
-  
 
   .text-content {
     width: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 
     @media (max-width: 728px) {
-      width: 100%;;
+      width: 100%;
     }
 
     h1 {
@@ -202,7 +188,6 @@ h1 {
     }
   }
 }
-
 
 // PARTIE 1 MUSIQUE
 
@@ -275,11 +260,6 @@ h1 {
   overflow: hidden;
   z-index: 100;
 
-  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: left;
- 
 
   h2 {
     text-align: center;
@@ -393,10 +373,6 @@ h1 {
   min-height: 650px;
   padding: 0 0 2.5% 0;
 
-  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-reverse.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: left;
 
   h2 {
     text-align: center;
@@ -444,12 +420,20 @@ footer {
   align-items: center;
   text-decoration: none;
 
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
   a {
     text-decoration: none;
     color: $p-text;
     font-weight: bolder;
     font-size: 1.3rem;
     transition: 0.2s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: rgb(225, 187, 141);
@@ -466,6 +450,12 @@ footer {
     justify-content: space-evenly;
     width: 30%;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2%;
+    }
   }
 
   .droit {
@@ -473,5 +463,19 @@ footer {
     width: 70%;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .confidentialite {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }

@@ -1,7 +1,7 @@
 $primary-color: #e6e3ea;
 $secondary-color: #59585bb3;
 $highlight-color: #e6e3ea;
-$white-color: #353232;
+$grey-color: #353232;
 $black-color: rgb(18, 18, 18);
 
 * {
@@ -21,7 +21,7 @@ header {
   margin-bottom: 2rem;
   nav {
     padding: 1rem 2rem;
-    background-color: $white-color;
+    background-color: $grey-color;
 
     ul {
       display: flex;
@@ -37,7 +37,7 @@ header {
         cursor: pointer;
 
         &:hover {
-          background-color: $white-color;
+          background-color: $grey-color;
           border-radius: 50px;
           color: $black-color;
         }
@@ -55,7 +55,6 @@ header {
   }
 }
 
-
 .comparatif {
   display: flex;
   flex-direction: column;
@@ -63,7 +62,7 @@ header {
   align-items: center;
   width: 100%;
   padding: 2.5% 2% 2% 1%;
-  
+
   h1 {
     margin: 0 5% 5% 5%;
     font-size: 3rem;
@@ -80,7 +79,7 @@ header {
     border-width: 1px;
     border-color: #bcaf91;
     border-collapse: collapse;
-    
+
     th {
       font-size: 2.7rem;
       background-color: $secondary-color;
@@ -157,10 +156,9 @@ header {
   }
 }
 
-
 #contact {
   padding: 40px;
-  background-color: $white-color;
+  background-color: $grey-color;
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
@@ -176,7 +174,7 @@ header {
 
   p {
     text-align: center;
-    color: $secondary-color;
+    color: $primary-color;
     margin-bottom: 20px;
   }
 
@@ -212,7 +210,7 @@ header {
     button {
       padding: 10px 15px;
       font-size: 1rem;
-      color: $white-color;
+      color: $grey-color;
       background-color: $primary-color;
       border: none;
       border-radius: 4px;
@@ -228,12 +226,16 @@ header {
 }
 
 footer {
-  background-color: $white-color;
+  background-color: $grey-color;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   a {
     text-decoration: none;
@@ -241,6 +243,10 @@ footer {
     font-weight: bolder;
     font-size: 1.3rem;
     transition: 0.2s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
 
     &:hover {
       color: black;
@@ -257,11 +263,32 @@ footer {
     justify-content: space-evenly;
     width: 30%;
 
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 2%;
+    }
   }
 
   .droit {
     display: flex;
-    width: 70%;
+    width: 40%;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+  }
+
+  .confidentialite {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
