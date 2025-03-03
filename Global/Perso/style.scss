@@ -19,7 +19,9 @@ body {
   position: relative;
   font-family: sans-serif;
   background-color: $primary-color;
-  z-index: 1;
+  
+
+ 
 }
 // PARTIE 0 HEADER
 
@@ -129,6 +131,13 @@ h1 {
   width: 100%;
   padding: 2rem;
 
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+
+
+
   @media (max-width: 728px) {
     flex-direction: column;
   }
@@ -140,6 +149,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 
     @media (max-width: 728px) {
       width: 100%;;
@@ -203,14 +213,13 @@ h1 {
   align-items: center;
   width: 100%;
   min-height: 500px;
-  gap: 1rem;
   position: relative;
   padding: 0 10px;
   z-index: 1;
-  background-image: url("./assets/Graphicsdesign/pixelcut-export.png");
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-reverse.png");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: end;
+  background-position: left;
 
   h2 {
     text-align: center;
@@ -266,6 +275,12 @@ h1 {
   overflow: hidden;
   z-index: 100;
 
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+ 
+
   h2 {
     text-align: center;
     padding: 3% 0 2.5% 0;
@@ -294,7 +309,7 @@ h1 {
       grid-column: 2;
       font-size: 2vw;
       color: $p-text;
-      background-color: $primary-color;
+      background-color: transparent;
       border-radius: 100px;
       display: grid;
       place-items: center;
@@ -378,6 +393,11 @@ h1 {
   min-height: 650px;
   padding: 0 0 2.5% 0;
 
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-reverse.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
+
   h2 {
     text-align: center;
     padding: 3% 0 2.5% 0;
@@ -417,16 +437,41 @@ h1 {
 }
 
 footer {
-  background-color: $primary-color;
-  color: #f4f1fa;
+  border-top: 2px dotted $title-text;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $p-text;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: rgb(225, 187, 141);
+    }
+  }
 
   p {
     text-align: center;
     font-size: large;
-    color: rgb(53, 50, 50);
+    color: $p-text;
+  }
+  .reseau {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+
+  }
+
+  .droit {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+
   }
 }

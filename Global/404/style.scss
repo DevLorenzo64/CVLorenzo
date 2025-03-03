@@ -7,6 +7,34 @@
 body {
   background-color: rgb(188, 196, 197);
   font-family: Montserrat, sans-serif;
+  overflow: hidden;
+}
+
+.exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 70px;
+    text-decoration: none;
+    color: #e90c0c;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background-color: #e90c0c;
+      color: #000000;
+    }
+  }
+
 }
 
 .main {
@@ -41,7 +69,6 @@ body {
     display: flex;
     font-size: 8rem;
     color: #fff;
-    flex-wrap: wrap;
 
     .text-pop-up-bottom {
       -webkit-animation: text-pop-up-bottom 1s ease-in-out infinite
@@ -96,14 +123,15 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
     .main {
-      flex-direction: column; /* Empile les éléments verticalement */
+      flex-direction: column; 
       height: auto;
       padding: 20px;
   
       .logo {
-        font-size: 6rem; /* Réduit la taille du logo */
+        flex-wrap: wrap; 
+        font-size: 6rem; 
         text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
           0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc,
           0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 10px 0 #cccccc,
@@ -111,14 +139,14 @@ body {
       }
   
       .text {
-        font-size: 4rem; /* Réduit la taille des textes */
-        flex-wrap: wrap; /* Permet au texte de s'étaler sur plusieurs lignes */
+        font-size: 4rem; 
+        flex-wrap: wrap; 
         justify-content: center;
       }
   
       .text-pop-up-top,
       .text-pop-up-bottom {
-        -webkit-animation-duration: 0.8s; /* Accélère les animations */
+        -webkit-animation-duration: 0.8s; 
         animation-duration: 0.8s;
       }
     }
@@ -129,11 +157,11 @@ body {
       padding: 10px;
   
       .logo {
-        font-size: 4rem; /* Encore plus petit pour les très petits écrans */
+        font-size: 4rem; 
       }
   
       .text {
-        font-size: 2.5rem; /* Taille réduite pour les textes */
+        font-size: 2.5rem; 
       }
     }
   }

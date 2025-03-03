@@ -14,7 +14,6 @@ body {
   position: relative;
   font-family: sans-serif;
   background-color: #e6e3ea;
-  z-index: 1;
 }
 
 header nav {
@@ -128,6 +127,10 @@ h1 {
   gap: 2rem;
   width: 100%;
   padding: 2rem;
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 @media (max-width: 728px) {
   .presentation {
@@ -236,14 +239,13 @@ h1 {
           align-items: center;
   width: 100%;
   min-height: 500px;
-  gap: 1rem;
   position: relative;
   padding: 0 10px;
   z-index: 1;
-  background-image: url("./assets/Graphicsdesign/pixelcut-export.png");
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-reverse.png");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: end;
+  background-position: left;
 }
 .musique h2 {
   text-align: center;
@@ -311,6 +313,10 @@ h1 {
   padding: 0 0 1.5% 0;
   overflow: hidden;
   z-index: 100;
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-vhqljg92.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 .cinema h2 {
   text-align: center;
@@ -344,7 +350,7 @@ h1 {
   grid-column: 2;
   font-size: 2vw;
   color: #353232;
-  background-color: #e6e3ea;
+  background-color: transparent;
   border-radius: 100px;
   display: grid;
   place-items: center;
@@ -443,6 +449,10 @@ h1 {
   width: 100%;
   min-height: 650px;
   padding: 0 0 2.5% 0;
+  background-image: url("./assets/Graphicsdesign/image-ai-brush-removebg-reverse.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left;
 }
 .projet h2 {
   text-align: center;
@@ -496,8 +506,7 @@ h1 {
 }
 
 footer {
-  background-color: #e6e3ea;
-  color: #f4f1fa;
+  border-top: 2px dotted rgba(89, 88, 91, 0.7019607843);
   padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,9 +516,39 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: #353232;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+footer a:hover {
+  color: rgb(225, 187, 141);
 }
 footer p {
   text-align: center;
   font-size: large;
-  color: rgb(53, 50, 50);
+  color: #353232;
+}
+footer .reseau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 30%;
+}
+footer .droit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=style.css.map */

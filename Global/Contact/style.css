@@ -69,7 +69,7 @@ header nav ul li a:hover {
   padding: 2.5% 2% 2% 1%;
 }
 .comparatif h1 {
-  margin: 5% 5% 5% 5%;
+  margin: 0 5% 5% 5%;
   font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +108,55 @@ header nav ul li a:hover {
   padding: 8px;
   border-style: solid;
   border-color: #bcaf91;
+}
+@media (max-width: 1024px) {
+  .comparatif h1 {
+    font-size: 2.5rem;
+  }
+  .comparatif .tftable {
+    width: 90%;
+  }
+  .comparatif .tftable th {
+    font-size: 2.3rem;
+  }
+  .comparatif .tftable td {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .comparatif h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .comparatif .tftable {
+    width: 95%;
+  }
+  .comparatif .tftable th {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+  .comparatif .tftable td {
+    font-size: 1.2rem;
+    padding: 6px;
+  }
+}
+@media (max-width: 480px) {
+  .comparatif h1 {
+    font-size: 1.4rem;
+    margin: 3% 3% 3% 3%;
+  }
+  .comparatif .tftable {
+    width: 100%;
+    font-size: 10px;
+  }
+  .comparatif .tftable th {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+  .comparatif .tftable td {
+    font-size: 1rem;
+    padding: 5px;
+  }
 }
 
 #contact {
@@ -182,8 +231,7 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-color: #e6e3ea;
-  color: white;
+  background-color: #353232;
   padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,9 +241,39 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
+}
+footer a {
+  text-decoration: none;
+  color: #e6e3ea;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+footer a:hover {
+  color: black;
 }
 footer p {
   text-align: center;
   font-size: large;
-  color: rgb(188, 173, 173);
+  color: #e6e3ea;
+}
+footer .reseau {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 30%;
+}
+footer .droit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }/*# sourceMappingURL=style.css.map */

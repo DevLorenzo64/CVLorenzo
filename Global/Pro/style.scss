@@ -149,14 +149,40 @@ main {
 
 footer {
   background-color: $title-text;
-  color: white;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: black;
+    }
+  }
+
   p {
     text-align: center;
     font-size: large;
-    color: rgb(188, 173, 173);
+    color: $primary-color;
+  }
+  .reseau {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+
+  }
+
+  .droit {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+
   }
 }
